@@ -16,7 +16,7 @@ SOURCE_AMI_ID ?= $(shell aws ec2 describe-images \
 		Name=state,Values=available \
 	--query 'max_by(Images[], &CreationDate).ImageId')
 
-AWS_DEFAULT_REGION = us-west-2
+AWS_DEFAULT_REGION = us-east-1
 
 .PHONY: all validate ami
 

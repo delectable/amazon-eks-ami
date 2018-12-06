@@ -1,12 +1,12 @@
 {
   "variables": {
-    "aws_region": "us-west-2",
-    "ami_name": "amazon-eks-node-{{timestamp}}",
+    "aws_region": "us-east-1",
+    "ami_name": "canary-amazon-eks-node-{{timestamp}}",
     "binary_bucket_name": "amazon-eks",
     "binary_bucket_region": "us-west-2",
     "binary_bucket_path": "1.10.3/2018-07-26/bin/linux/amd64",
     "creator": "{{env `USER`}}",
-    "instance_type": "m4.large",
+    "instance_type": "m1.large",
     "source_ami_id": "",
     "encrypted": "false",
     "kms_key_id": ""
