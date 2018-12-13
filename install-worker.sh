@@ -64,6 +64,9 @@ sudo mkdir -p /etc/docker
 sudo mv $TEMPLATE_DIR/docker-daemon.json /etc/docker/daemon.json
 sudo chown root:root /etc/docker/daemon.json
 
+# TODO only upgrade Docker
+sudo yum upgrade -y
+
 # Enable docker daemon to start on boot.
 sudo systemctl daemon-reload
 sudo systemctl enable docker
